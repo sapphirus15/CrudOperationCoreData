@@ -14,8 +14,12 @@
 		94BADD2327FD4E4700758976 /* CrudOperationCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94BADD2127FD4E4700758976 /* CrudOperationCoreData.xcdatamodeld */; };
 		94BADD2527FD4E4700758976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94BADD2427FD4E4700758976 /* Assets.xcassets */; };
 		94BADD2827FD4E4700758976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94BADD2627FD4E4700758976 /* LaunchScreen.storyboard */; };
-		94BADD3127FD6B5100758976 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BADD2F27FD6B5100758976 /* Task+CoreDataClass.swift */; };
-		94BADD3227FD6B5100758976 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BADD3027FD6B5100758976 /* Task+CoreDataProperties.swift */; };
+		94BADD3927FD723C00758976 /* Passport+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BADD3327FD723C00758976 /* Passport+CoreDataClass.swift */; };
+		94BADD3A27FD723C00758976 /* Passport+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BADD3427FD723C00758976 /* Passport+CoreDataProperties.swift */; };
+		94BADD3B27FD723C00758976 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BADD3527FD723C00758976 /* User+CoreDataClass.swift */; };
+		94BADD3C27FD723C00758976 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BADD3627FD723C00758976 /* User+CoreDataProperties.swift */; };
+		94BADD3D27FD723C00758976 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BADD3727FD723C00758976 /* Task+CoreDataClass.swift */; };
+		94BADD3E27FD723C00758976 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BADD3827FD723C00758976 /* Task+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +32,12 @@
 		94BADD2427FD4E4700758976 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94BADD2727FD4E4700758976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94BADD2927FD4E4700758976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94BADD2F27FD6B5100758976 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
-		94BADD3027FD6B5100758976 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		94BADD3327FD723C00758976 /* Passport+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Passport+CoreDataClass.swift"; sourceTree = "<group>"; };
+		94BADD3427FD723C00758976 /* Passport+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Passport+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		94BADD3527FD723C00758976 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		94BADD3627FD723C00758976 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		94BADD3727FD723C00758976 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		94BADD3827FD723C00758976 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +78,12 @@
 				94BADD2627FD4E4700758976 /* LaunchScreen.storyboard */,
 				94BADD2927FD4E4700758976 /* Info.plist */,
 				94BADD2127FD4E4700758976 /* CrudOperationCoreData.xcdatamodeld */,
-				94BADD2F27FD6B5100758976 /* Task+CoreDataClass.swift */,
-				94BADD3027FD6B5100758976 /* Task+CoreDataProperties.swift */,
+				94BADD3327FD723C00758976 /* Passport+CoreDataClass.swift */,
+				94BADD3427FD723C00758976 /* Passport+CoreDataProperties.swift */,
+				94BADD3527FD723C00758976 /* User+CoreDataClass.swift */,
+				94BADD3627FD723C00758976 /* User+CoreDataProperties.swift */,
+				94BADD3727FD723C00758976 /* Task+CoreDataClass.swift */,
+				94BADD3827FD723C00758976 /* Task+CoreDataProperties.swift */,
 			);
 			path = CrudOperationCoreData;
 			sourceTree = "<group>";
@@ -148,11 +160,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				94BADD2327FD4E4700758976 /* CrudOperationCoreData.xcdatamodeld in Sources */,
-				94BADD3127FD6B5100758976 /* Task+CoreDataClass.swift in Sources */,
+				94BADD3D27FD723C00758976 /* Task+CoreDataClass.swift in Sources */,
+				94BADD3927FD723C00758976 /* Passport+CoreDataClass.swift in Sources */,
+				94BADD3C27FD723C00758976 /* User+CoreDataProperties.swift in Sources */,
 				94BADD1D27FD4E4700758976 /* ViewController.swift in Sources */,
+				94BADD3A27FD723C00758976 /* Passport+CoreDataProperties.swift in Sources */,
 				94BADD1927FD4E4700758976 /* AppDelegate.swift in Sources */,
-				94BADD3227FD6B5100758976 /* Task+CoreDataProperties.swift in Sources */,
 				94BADD1B27FD4E4700758976 /* SceneDelegate.swift in Sources */,
+				94BADD3E27FD723C00758976 /* Task+CoreDataProperties.swift in Sources */,
+				94BADD3B27FD723C00758976 /* User+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

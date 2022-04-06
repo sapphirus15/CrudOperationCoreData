@@ -17,7 +17,7 @@ class ViewController: UIViewController {
 //        addToTask()
 //        fetchTaskFromCoreDate()
 //        deleteTaskFromCoreData()
-//        addTodoTaskWithObjectOrientedWay()
+        addTodoTaskWithObjectOrientedWay()
         fetchTaskFromCoreDataWithObjectOrientedStyle()
 //        deleteTaskFromCoreDataWithObjectOrientedWay()
     }

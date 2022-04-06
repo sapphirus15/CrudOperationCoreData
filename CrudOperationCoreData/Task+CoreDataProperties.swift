@@ -19,6 +19,7 @@ extension Task {
     @NSManaged public var name: String?
     @NSManaged public var id: Int32
     @NSManaged public var details: String?
+    @NSManaged public var ofUser: User?
 
 }
 
