@@ -15,10 +15,81 @@ class ViewController: UIViewController {
         
 //        addToTask()
 //        addToTask()
-        fetchTaskFromCoreDate()
+//        fetchTaskFromCoreDate()
 //        deleteTaskFromCoreData()
+//        addTodoTaskWithObjectOrientedWay()
+        fetchTaskFromCoreDataWithObjectOrientedStyle()
+//        deleteTaskFromCoreDataWithObjectOrientedWay()
     }
 
+    
+
+}
+
+/// Object Oriented Style CRUD
+extension ViewController {
+    func addTodoTaskWithObjectOrientedWay() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        
+        let managedObjectContext = appDelegate.persistentContainer.viewContext
+        
+        let todoObject = Task(context: managedObjectContext)
+        todoObject.name = "2nd Item"
+        todoObject.details = "2nd Item Description"
+        todoObject.id = 2
+        
+        do {
+            try managedObjectContext.save()
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
+    func fetchTaskFromCoreDataWithObjectOrientedStyle() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        
+        let managedObjectContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest = NSFetchRequest<Task>(entityName: "Task")
+        
+        do {
+            let tasks = try managedObjectContext.fetch(fetchRequest)
+            
+            for data in tasks {
+                print(data.details ?? "No Data found")
+            }
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
+    }
+    
+    func deleteTaskFromCoreDataWithObjectOrientedWay() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        
+        let managedObjectContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest = NSFetchRequest<Task>(entityName: "Task")
+        
+        do {
+            let tasks = try managedObjectContext.fetch(fetchRequest)
+            
+            for task in tasks {
+                managedObjectContext.delete(task)
+            }
+            
+            do {
+                try  managedObjectContext.save()
+            } catch let error as NSError {
+                print("Could not save. \(error), \(error.userInfo)")
+            }
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
+    }
+}
+
+/// Simple CRUD func
+extension ViewController {
     func addToTask() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         
@@ -81,6 +152,4 @@ class ViewController: UIViewController {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
     }
-
 }
-
