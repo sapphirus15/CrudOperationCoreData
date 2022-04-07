@@ -12,7 +12,7 @@
         <relationship name="ofUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="tasks" inverseEntity="User"/>
     </entity>
     <entity name="User" representedClassName="User" syncable="YES">
-        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String" minValueString="2" maxValueString="12"/>
         <attribute name="secondName" optional="YES" attributeType="String"/>
         <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="passport" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Passport" inverseName="ofUser" inverseEntity="Passport"/>
